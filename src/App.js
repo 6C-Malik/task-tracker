@@ -32,19 +32,19 @@ export default function App() {
     },
   ]);
 
-  //Add Task
+  //Ajouter une tâche
   const addTask = (task) => {
     const id = Math.floor(Math.random() * 10000) + 1;
     const newTask = { id, ...task };
     setTasks([...tasks, newTask]);
   };
 
-  // Delete Task
+  // Supprimer une tâche
   const deleteTask = (id) => {
     setTasks(tasks.filter((task) => task.id !== id));
   };
 
-  //Toggle Reminder
+  //Rappel de tâche
   const toggleReminder = (id) => {
     setTasks(
       tasks.map((task) =>
@@ -63,7 +63,7 @@ export default function App() {
       {tasks.length > 0 ? (
         <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder} />
       ) : (
-        "No Tasks to show"
+        "Aucune tâche pour le moment"
       )}
     </div>
   );
