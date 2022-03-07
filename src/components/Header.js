@@ -7,7 +7,7 @@ export default function Header({ title, onAdd, showAdd }) {
       <h1>{title}</h1>
       <Button
         color={showAdd ? "red" : "green"}
-        text={showAdd ? "close" : "Add"}
+        text={showAdd ? "Fermer" : "Ajouter"}
         onClick={onAdd}
       />
     </header>
@@ -15,7 +15,7 @@ export default function Header({ title, onAdd, showAdd }) {
 }
 
 Header.defaultProps = {
-  title: "Task Tracker",
+  title: "To do list",
 };
 
 Header.propTypes = {

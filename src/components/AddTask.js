@@ -25,7 +25,7 @@ export default function AddTask({ onAdd }) {
   return (
     <form className='add-form' onSubmit={onSubmit}>
         <div className="form-control">
-            <label>task</label>
+            <label>Tâche</label>
             <input type='text' placeholder='Ajouter tâche' value={text} onChange={(e) => setText(e.target.value)} />
         </div>
         <div className="form-control">

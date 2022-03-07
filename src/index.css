@@ -8,6 +8,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  background-image: url(https://images.unsplash.com/photo-1533090161767-e6ffed986c88?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80);
 }
 
 .container {
@@ -15,7 +16,7 @@ body {
   margin: 30px auto;
   overflow: auto;
   min-height: 300px;
-  border: 1px solid steelblue;
+  border: 1px solid rgb(24, 42, 56);
   padding: 30px;
   border-radius: 5px;
 }
